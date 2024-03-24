@@ -1,0 +1,51 @@
+#container{
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h1 {
+	padding: 10px;
+	border: 1px solid #D6A800;
+	color: #FFFFFF;
+	background-color: #8D8741;
+	font-family: "dosis", system-ui;
+}
+
+h2 {
+	padding: 10px;
+	border: 1px solid #D6A800;
+	color: #FFFFFF;
+	background-color: #8D8741;
+	font-family: "dosis", system-ui;
+}
+
+h3 {
+	padding: 10px;
+	border: 1px solid #D6A800;
+	color: #FFFFFF;
+	background-color: #8D8741;
+	font-family: "dosis", system-ui;
+}
+
+h4 {
+	padding: 10px;
+	border: 1px solid #D6A800;
+	color: #FFFFFF;
+	background-color: #8D8741;
+	font-family: "dosis", system-ui;
+}
+
+a{
+	text-decoration: none;
+	color: #659DBD;
+}
+
+a:hover{
+	color: #D9CCA0;
+}
+
+a:visited{
+	color:#BC986A;
+}
+
