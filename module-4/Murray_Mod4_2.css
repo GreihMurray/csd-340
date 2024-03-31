@@ -1,0 +1,37 @@
+h1{
+	width: 100%;
+	text-align: center;
+}
+
+.container{
+	
+}
+
+#image-gallery{
+	margin-top: 10%;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+}
+
+.home-link{
+	width:100%;
+	text-align: right;
+}
+
+img{
+	width: 300px;
+	height: 400px;
+}
+
+h3{
+	text-align: center;
+}
+
+figure{
+	text-align: center;
+}
+
+figcaption{
+	font-size: 0.75em;
+	font-style: italic;
+}
