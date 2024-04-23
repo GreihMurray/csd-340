@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Development with HTML and CSS</title>
+		
+		<script>
+			var firstVar = "dragon";
+			var secondVar = "knights";
+			var thirdVar = "tower";
+			var fourthVar = "happen";
+		</script>
+	</head>
+	
+	<body>
+		<div id="container"></div>
+		<h1>Assignment 9.3 – Building a Web Page Exercise, Part 2</h1>
+		<h2>Chapter 1</h2>
+		
+		<p class="intro">Once upon a time there was a lovely
+			princess. But she had an
+			enchantment upon her of a fearful
+			sort which could only be broken by
+			love's first kiss. She was locked
+			away in a castle guarded by a
+			terrible fire-breathing 
+			<span id="dragon">_____</span>.
+		</p>
+		<p>Many brave <span id="knights">_____</span> had attempted to free her from this dreadful prison, but non prevailed.</p>
+		<p>
+			She waited in
+			the dragon's keep in the highest
+			room of the tallest <span id="tower">_____</span> for her
+			true love and true love's first
+			kiss.
+		</p>
+		<p>Like that's ever gonna <span id="happen">______</span>. What a load of- </p>
+		
+		<button type="button" onClick="document.getElementById(firstVar).innerHTML = firstVar">dragon</button>
+		<button type="button" onClick="document.getElementById(secondVar).innerHTML = secondVar">knight</button>
+		<button type="button" onClick="document.getElementById(thirdVar).innerHTML = thirdVar">tower</button>
+		<button type="button" onClick="document.getElementById(fourthVar).innerHTML = fourthVar">happen</button>
+		
+		<hr>
+		
+		<address>
+			<a href="https://degrees.bellevue.edu/">Bellevue University</a>
+			<p>Bellevue University, 1000 Galvin Rd S</p>
+			<p>Bellevue, NE 68005</p>
+		</address>
+	</body>
+</html>
