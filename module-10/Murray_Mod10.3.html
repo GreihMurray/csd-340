@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Web Development with Html and CSS</title>
+		<script>
+			var red = 255;
+			var blue = 255;
+			var green = 255;
+			var goUp = false;
+		</script>
+	</head>
+	
+	<body style="background-color: rgb(255, 255, 255)">
+		<h1>Assignment 10.3: Javascript - Part 2</h1>
+		
+		<img src="./imgs/cliff1.jpg" id="img1" width="250px" height="250px"/>
+		
+		<p onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Hover over text to change color</p>
+		
+		<img src="./imgs/moon1.jpg" id="img2" width="250px" height="250px"/>
+		
+		<p onmouseover="this.style.color='red'" onmouseout="this.style.color='black'">Hover over image to switch</p>
+		
+		<script>
+			document.getElementById("img1").addEventListener("mouseover", function(){
+				this.src = "./imgs/cliff2.jpg"
+			})
+			document.getElementById("img1").addEventListener("mouseout", function(){
+				this.src = "./imgs/cliff1.jpg"
+			})
+			
+			document.getElementById("img2").addEventListener("mouseover", function(){
+				this.src = "./imgs/moon2.jpg"
+			})
+			document.getElementById("img2").addEventListener("mouseout", function(){
+				this.src = "./imgs/moon1.jpg"
+				console.log(document.body.style.backgroundColor)
+			})
+		</script>
+	</body>
+	
+	<script>
+		document.body.addEventListener("mousemove", function(){
+			if(goUp){
+				red += 1;
+				blue += 1;
+				green += 1;
+			} else{
+				red -= 1;
+				blue -= 1;
+				green -= 1;
+			}
+			
+			this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
+			
+			if(red <= 50){
+				goUp = true
+			} else if (red >= 255){
+				goUp = false
+			}
+		})
+	</script>
+</html>
