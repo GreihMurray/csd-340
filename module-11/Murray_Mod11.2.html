@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CSD 340 Web Development with Html and CSS</title>
+		<script>
+			var toDo = [];
+		</script>
+	</head>
+	
+	<body>
+		<script>
+			function addEntry(){
+				toDo.push(document.getElementById("inputArea").value);
+			}
+			
+			function deleteEntry(){
+				toDo.pop();
+			}
+			
+			function display(){
+				var fullText = "";
+			
+				var iter = 1;
+			
+				toDo.forEach((value) => {
+					fullText += `<p>Item ${iter}: ${value}</p>`
+					iter += 1;
+				})
+				
+				console.log(fullText)
+				
+				document.getElementById("ListInfo").innerHTML = fullText;
+			}
+		</script>
+	
+		<h1>Assignment 11.2: Javascript - Part 3</h1>
+		
+		<div>
+			<input type="button" value="Add Entry" onClick="addEntry()"/>
+			
+			<input type="button" value="Delete Last Entry" onClick="deleteEntry()"/>
+			
+			<input type="button" value="Display" onClick="display()"/>
+		</div>
+		
+		<br>
+		
+		<textarea id="inputArea"></textarea>
+		
+		<div id="ListInfo">
+		
+		</div>
+	</body>
+	
+</html>
