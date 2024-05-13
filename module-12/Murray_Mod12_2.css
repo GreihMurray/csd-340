@@ -1,0 +1,50 @@
+.title-h1{
+	text-align: center;
+}
+
+#container{
+	
+}
+
+.left-div{
+	width: 45%;
+	float: left;
+	border: 1px solid red;
+	border-radius: 15px;
+}
+
+.right-div{
+	width: 45%;
+	float: right;
+	border: 1px dashed red;
+	border-radius: 15px;
+}
+
+.last-div{
+	float: right;
+	text-align: right;
+	width: 100%;
+	margin-top: 25%;
+}
+
+h3{
+	font-weight: 500;
+}
+
+ol{
+	font-weight: 300;
+	padding: 10px;
+	list-style-position: inside;
+}
+
+ul{
+	font-weight: 300;
+	padding: 10px;
+	list-style-type: upper-roman;
+	list-style-position: inside;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: purple;
+}
